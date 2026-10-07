@@ -22,3 +22,7 @@ Thumbs.db
 .env.*
 application-local.properties
 application-local.yml
+
+# 開発用H2のDBファイル
+# ユーザー情報やタスクデータをGitHubへ含めない
+/backend/data/

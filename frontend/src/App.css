@@ -1,0 +1,292 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 16px;
+  background: linear-gradient(135deg, #e0f2fe, #f0f9ff);
+  box-sizing: border-box;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px;
+  background-color: #ffffff;
+  border: 1px solid #bae6fd;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(14, 165, 233, 0.12);
+  box-sizing: border-box;
+}
+
+.login-container h1 {
+  margin: 0 0 30px;
+  color: #075985;
+  text-align: center;
+  font-size: 28px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  color: #0c4a6e;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid #7dd3fc;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #0c4a6e;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  border-color: #0284c7;
+  outline: 3px solid #bae6fd;
+  outline-offset: 2px;
+}
+
+.password-input {
+  display: flex;
+  gap: 8px;
+}
+
+.password-input input {
+  flex: 1;
+}
+
+.password-toggle {
+  flex-shrink: 0;
+  padding: 0 12px;
+  border: 1px solid #7dd3fc;
+  border-radius: 6px;
+  background-color: #f0f9ff;
+  color: #075985;
+  cursor: pointer;
+}
+
+.password-toggle:hover {
+  background-color: #e0f2fe;
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #0284c7;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #0369a1;
+}
+
+.login-button:focus-visible,
+.password-toggle:focus-visible {
+  outline: 3px solid #0284c7;
+  outline-offset: 3px;
+}
+
+.error-message {
+  margin: 0;
+  color: #b91c1c;
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    padding: 28px 20px;
+  }
+
+  .login-container h1 {
+    font-size: 24px;
+  }
+}
+
+/* ========================================
+   タスク一覧画面：空色・白色のデザイン
+   ======================================== */
+
+.task-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 32px 20px;
+  color: #0c4a6e;
+  box-sizing: border-box;
+}
+
+.task-container h1 {
+  margin: 0 0 24px;
+  color: #075985;
+  font-size: 28px;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.task-card {
+  padding: 20px;
+  border: 1px solid #bae6fd;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.08);
+  overflow-wrap: anywhere;
+}
+
+.task-card h2 {
+  margin: 0 0 12px;
+  color: #075985;
+  font-size: 20px;
+}
+
+.task-card p {
+  margin: 8px 0 0;
+  white-space: pre-wrap;
+}
+
+/* ========================================
+   タスク登録・編集フォーム
+   ======================================== */
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+  border: 1px solid #bae6fd;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.08);
+}
+
+.task-form select,
+.task-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #7dd3fc;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #0c4a6e;
+  font-family: inherit;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.task-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.task-form select:focus,
+.task-form textarea:focus {
+  border-color: #0284c7;
+  outline: 3px solid #bae6fd;
+  outline-offset: 2px;
+}
+
+/* ⑩：画面確認用の切り替え欄 */
+.screen-preview {
+  flex-direction: column;
+}
+
+.preview-controls {
+  width: 100%;
+  max-width: 800px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.preview-controls label {
+  display: block;
+  margin-bottom: 8px;
+  color: #075985;
+}
+
+.preview-controls select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #7dd3fc;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #0c4a6e;
+  font-size: 16px;
+}
+
+.preview-controls select:focus-visible {
+  outline: 3px solid #0284c7;
+  outline-offset: 2px;
+}
+
+/* 一覧から編集画面を開くボタン */
+.task-edit-button {
+  margin-top: 16px;
+  padding: 10px 20px;
+  border: 1px solid #0284c7;
+  border-radius: 6px;
+  background-color: #f0f9ff;
+  color: #075985;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.task-edit-button:hover {
+  background-color: #e0f2fe;
+}
+
+.task-edit-button:focus-visible {
+  outline: 3px solid #0284c7;
+  outline-offset: 2px;
+}
+
+/* 一覧の削除ボタン */
+.task-delete-button {
+  margin-top: 16px;
+  margin-left: 12px;
+  padding: 10px 20px;
+  border: 1px solid #b91c1c;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #b91c1c;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.task-delete-button:hover:not(:disabled) {
+  background-color: #fef2f2;
+}
+
+.task-delete-button:focus-visible {
+  outline: 3px solid #b91c1c;
+  outline-offset: 2px;
+}
+
+.task-delete-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
